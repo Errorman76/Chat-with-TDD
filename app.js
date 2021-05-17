@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var chatRouter = require('./routes/chat');
 
 var app = express();
 
@@ -36,6 +37,21 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+app.io = require('socket.io')();
+app.io.on('connection', function(socket){
+  console.log("a user connected");
+  socket.broadcast.emit('hi');
+
+  socket.on('disconnect', function(){
+      console.log('user disconnection');
+  });
+
+  socket.on('chatMessage', function(msg){
+    console.log('message: ' + msg);
+    app.io.emit('chatMessage', msg);
+  });
 });
 
 module.exports = app;
