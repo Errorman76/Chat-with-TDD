@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border: 1px solid black;
+}
+main {
+  border: 1px solid black;
+  width: 100%;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid black;
+}
