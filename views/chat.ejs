@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="/stylesheets/chat.css">
-        <script src="/socket.io/socket.io.js"></script>
-        <script src="/libraries/jquery-3.6.0.min.js"></script>
-    </head>
-    <body>
-        <!-- header -->
-        <header>
-            <% include ./header.ejs %>
-        </header>
 
-        <!-- main -->
-        <!-- chat rooms -->
-        <main>
-            
-        </main>
+<head>
+    <link rel="stylesheet" href="/stylesheets/chat.css">
+    <link rel="stylesheet" href="/stylesheets/public.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/libraries/jquery-3.6.0.min.js"></script>
+</head>
 
-        <!-- footer -->
-        <footer>
-            <% include ./footer.ejs %>
-        </footer>
-    </body>
+<body>
+    <!-- header -->
+    <header>
+        <% include ./header.ejs %>
+    </header>
+
+    <!-- main -->
+    <!-- chat rooms -->
+    <main>
+        <div class="container">
+            <div class="item">
+                
+            </div>
+            <div class="item">
+
+            </div>
+            <div class="item">
+
+            </div>
+            <div class="item">
+
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <% include ./footer.ejs %>
+    </footer>
+</body>
+
 </html>
