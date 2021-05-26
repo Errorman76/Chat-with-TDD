@@ -1,29 +1,25 @@
 * {
     box-sizing: border-box;
     border: none;
+    margin: 0;
     padding: 0;
 }
 
-html,
-body {
+html {
     height: 100%;
 }
 
-header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    border: 1px solid black;
+body{
+    min-height: 100%;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 main {
-    border: 1px solid black;
+    background-color: red;
+    height: 130px;
     width: 100%;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    border: 1px solid black;
-}
+
