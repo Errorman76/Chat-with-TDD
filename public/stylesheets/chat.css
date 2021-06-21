@@ -1,0 +1,7 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 360px;
+}
+/*# sourceMappingURL=chat.css.map */
